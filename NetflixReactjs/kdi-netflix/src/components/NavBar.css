@@ -1,0 +1,20 @@
+.navBar__logo {
+  width: 80px;
+  object-fit: contain;
+}
+
+.navBar {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 0.5rem 0 1.4rem 0;
+  width: 100%;
+  background-color: transparent;
+  transition: ease-in-out 0.5s;
+  height: var(--header-height);
+}
+
+.navBar--black {
+  background-color: black;
+}

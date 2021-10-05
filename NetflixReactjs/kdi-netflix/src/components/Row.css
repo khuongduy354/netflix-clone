@@ -1,0 +1,16 @@
+.row__img {
+  max-height: 100px;
+}
+
+.row__movies {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 2rem;
+}
+.row__movies::-webkit-scrollbar {
+  display: none;
+}
+.row__header {
+  padding: 1rem;
+  color: white;
+}

@@ -1,0 +1,33 @@
+.banner {
+  background-image: url("https://wallpaperaccess.com/full/173798.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  max-width: 100%;
+  min-height: 100vh;
+  transition: background-image ease-in-out 1s;
+}
+.banner__play {
+  margin-right: 1rem;
+  padding: 1rem;
+  background-color: white;
+  width: 80px;
+}
+
+.banner__mylist {
+  margin-left: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 80px;
+
+  background-color: white;
+}
+
+.banner .container {
+  color: white;
+  margin: 240px 0 0 3rem;
+  padding: 3rem;
+  width: clamp(300px, 30%, 400px);
+}
