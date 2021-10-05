@@ -19,8 +19,8 @@ const Banner = () => {
         ]
       );
     }
-    setInterval(getBanner, 10000);
-    return clearInterval(getBanner, 10000);
+    setInterval(getBanner, 20000);
+    return clearInterval(getBanner, 20000);
   }, []);
 
   return (
