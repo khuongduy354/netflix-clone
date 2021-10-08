@@ -23,13 +23,29 @@ const Row = ({ title, moviesUrls, isLarge }) => {
       <div className="row__movies">
         {movies &&
           movies.map((movie) => {
-            return (
-              <img
-                class="row__img"
-                src={movie.poster_path && `${img_path}${movie.poster_path}`}
-                alt={`${movie.name}`}
-              />
-            );
+            {
+              if (isLarge) {
+                return (
+                  <img
+                    class="row__img"
+                    src={
+                      movie.backdrop_path && `${img_path}${movie.backdrop_path}`
+                    }
+                    alt={`${movie.name}`}
+                  />
+                );
+              } else {
+                return (
+                  <img
+                    class="row__img"
+                    src={
+                      movie.backdrop_path && `${img_path}${movie.poster_path}`
+                    }
+                    alt={`${movie.name}`}
+                  />
+                );
+              }
+            }
           })}
       </div>
     </div>

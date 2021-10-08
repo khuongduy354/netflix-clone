@@ -7,10 +7,17 @@
   overflow-x: scroll;
   padding-bottom: 2rem;
 }
-.row__movies::-webkit-scrollbar {
-  display: none;
-}
+
 .row__header {
   padding: 1rem;
   color: white;
+}
+@media screen and (max-width: 442px) {
+  .row__movies {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+  }
+  .row__movies::-webkit-scrollbar {
+    display: none;
+  }
 }

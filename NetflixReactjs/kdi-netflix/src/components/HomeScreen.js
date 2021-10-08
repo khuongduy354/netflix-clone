@@ -15,11 +15,7 @@ const HomeScreen = () => {
           moviesUrls={tmdbEnpoints.top_rated}
           isLarge={false}
         />
-        <Row
-          title="Popular"
-          moviesUrls={tmdbEnpoints.popular}
-          isLarge={false}
-        />
+        <Row title="Popular" moviesUrls={tmdbEnpoints.popular} isLarge={true} />
         <Row
           title="Upcoming"
           moviesUrls={tmdbEnpoints.upcoming}
