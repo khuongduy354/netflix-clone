@@ -10,7 +10,11 @@ const Row = ({ title, moviesUrls, isLarge }) => {
       const fetchUrl = `${moviesUrls}?api_key=${api_key}`;
       let response = await fetch(fetchUrl);
       response = await response.json();
-      setMovies(response.results);
+      if (response.results.length > 9) {
+        setMovies(response.results.slice(0, 10));
+      } else {
+        setMovies(response.results);
+      }
     })();
   }, [moviesUrls]);
   return (
