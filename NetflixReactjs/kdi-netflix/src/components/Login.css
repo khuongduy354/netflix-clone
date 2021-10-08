@@ -1,0 +1,45 @@
+.login {
+  background-image: url("https://lh3.googleusercontent.com/proxy/Fr6ghV5BB3Swu7WLFK6uw_nuugPhRPqpFxsLIaCR6k2gfFm0_xjUsSM_1mvo3n4aHuBED_tmZ_dQujh2Hb4X9gScQqHakt3hqW3f");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__email-container {
+  max-width: 768px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.login__form > * {
+  display: block;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.login__form {
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__submit-btn {
+  width: 173px;
+}
+.form__signup-btn {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}

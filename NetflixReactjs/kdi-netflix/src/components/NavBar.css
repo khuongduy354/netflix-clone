@@ -4,6 +4,7 @@
 }
 
 .navBar {
+  color: white;
   z-index: 1;
   top: 0;
   left: 0;
@@ -17,4 +18,20 @@
 
 .navBar--black {
   background-color: black;
+}
+
+.navBar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar__btn {
+  padding: 1rem;
+  background-color: orange;
+  color: white;
+  width: 100px;
+}
+
+.navBar__user-container > * {
+  display: inline-block;
 }
