@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 
 import "./App.css";
 import HomeScreen from "./components/HomeScreen";
-import { Switch, Route, Link, BrowserRouter as Router } from "react-router-dom";
 import Login from "./components/Login";
 import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
@@ -31,17 +30,8 @@ function App() {
   }, []);
   const user = useSelector(selectUser);
 
-  return (
-    <div className="app">
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            {user ? <HomeScreen /> : <Login />}
-          </Route>
-        </Switch>
-      </Router>
-    </div>
-  );
+  console.log("app ran");
+  return <div className="app">{user ? <HomeScreen /> : <Login />}</div>;
 }
 
 export default App;
